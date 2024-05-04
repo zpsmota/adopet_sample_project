@@ -1,5 +1,5 @@
 describe('Sign up validation (Happy Path)', () => {
-  it('Should be able to sign up as new user', () => {
+  it('Should be able to sign up a new user by filling and submitting the form items on the "Sign Up" page', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.contains('a', 'Cadastrar').click();
     cy.get('input[id="name"]').type('John Smith');
