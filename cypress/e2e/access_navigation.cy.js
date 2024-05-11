@@ -23,7 +23,7 @@ describe('Validate Main Page\'s UI Elements', () => {
     cy.contains('a', 'login');
     cy.get('a[data-test="login-button"]').should('be.visible').and('not.be.disabled');
   })
-  it('Should find an available pets list log in link on the main page', () => {
+  it('Should find an available pets list link on the main page', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.contains('a', 'Ver pets disponíveis para adoção');
     cy.contains('a.button', 'Ver pets disponíveis para adoção').should('be.visible').and('not.be.disabled');
